@@ -1,0 +1,76 @@
+
+
+p{
+  font-family:  serif;
+  font-size: 20px;
+   text-align: justify;
+}
+
+  .abtrow{
+    margin:20px 0 ;
+    display: flex;
+    padding: 30px 57px;
+    flex-wrap: wrap;
+    font-size: large;
+    flex-direction: row;
+  }
+  .rowone{
+    margin-top: 1900px
+  }
+  
+
+h2,h3{
+  color: rgb(2, 18, 83);
+  font-family:  serif;
+  font-weight: 800;
+}
+   .abtcol1, .abtcol2 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.abtcol1 img, .abtcol2 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Zigzag layout for alternating rows */
+.abtrow:nth-child(odd) {
+  flex-direction: row;
+}
+
+.abtrow:nth-child(even) {
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 1024px) and (min-width:680){
+  .rowone{
+    margin-top: 1500px;
+  }
+
+}
+@media only screen and (max-width: 684px) {
+  .rowone {
+    margin-top: 3200px; /* Adjust if needed */
+  }
+
+
+  .abtrow {
+    flex-direction: column; /* Stack content vertically */
+    padding: 2px; /* Adjust padding for mobile view */
+  }
+.abtrow:nth-child(odd){
+  flex-direction: column;
+}
+.abtrow:nth-child(even){
+  flex-direction: column;
+}
+  .abtcol1, .abtcol2 {
+    width: 100%; /* Full width for each column */
+    padding: 10px; /* Adjust padding for mobile view */
+  }
+
+  .abtcol2 img {
+    margin-bottom: 20px; /* Space between image and content */
+  }
+}

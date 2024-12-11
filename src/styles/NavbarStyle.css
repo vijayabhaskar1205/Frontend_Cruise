@@ -1,0 +1,72 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: rgb(2, 45, 95);
+    margin-bottom: 3rem;
+  }
+  .basic-navbar-nav{
+    color:white
+  }
+  .navbar-brand img {
+    height: 50px; /* Adjust this value as needed */
+    width: auto;  /* Maintain aspect ratio */
+  }
+  .navbar-brand, .nav-link {
+    border-color: white;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row; /* Default to row layout */
+  }
+  .navbar-toggler {
+    border-color: white; /* Change border color of the toggle button */
+  }
+  .nav-link {
+    font-family: serif;
+    padding: 0.5rem 1rem;
+    font-size: 25px;
+    margin: auto 1rem;
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+  }
+  .nav-link:hover {
+    transform: translateY(-5px);
+    color: #a1abf8f9;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Change the icon color to white */
+      }
+
+    .navbar-collapse.collapse:not(.show) {
+        width: 40%; /* Change navbar width to 40% when collapsed */
+      }
+      .basic-navbar-nav{
+        color:white
+      }
+    .nav-link {
+      padding: 0.75rem 0;
+    }
+  }
+  
+  @media only screen and (min-width: 730px) and (max-width: 1024px) {
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .basic-navbar-nav{
+        color:white
+      }
+    .nav-link {
+      padding: 0.75rem 0;
+    }
+  }
+  

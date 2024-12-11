@@ -1,0 +1,97 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure that the main container has no margin issues */
+.amenitiesPage {
+    font-family: serif;
+    margin-top: 0; /* Ensure no margin is pushing the content down */
+}
+
+.dining{
+    margin-top: 1800px;
+}
+.title {
+    font-family: serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: rgb(2, 34, 71);;
+    font-weight: 800;
+    margin-top: 3rem;
+  }
+
+.amrow1 h2{
+    margin-top: 1400px;
+}
+.amrow1 h2,.amrow1 p{
+    text-align: center;
+}
+.amrow1 p{
+    margin: 10px 20rem;
+    margin-bottom: 30px;
+}
+.amrow2 h2{
+    margin-top: 40px;
+}
+.amrow2 h2,.amrow2 p{
+    text-align: center;
+}
+.amrow2 p{
+    margin: 10px 20rem;
+    margin-bottom: 30px;
+}
+.amrow3 h2{
+    margin-top: 40px;
+}
+.amrow3 h2,.amrow3 p{
+    text-align: center;
+}
+.amrow3 p{
+    margin: 10px 20rem;
+    margin-bottom: 30px;
+}
+.facilities .info p,.features .info p,.dining .info p{
+    font-weight: 400;
+}
+
+@media screen and (min-width:784px) and (max-width:1024){
+    .amenitiesPage{
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width:784px) {
+    .amenitiesPage{
+        display: flex;
+        flex-direction: column;
+    }
+    #amenities-header{
+        margin-top: 20px;
+    }
+    .dining{
+        margin-top: 900px;
+    }
+    .amrow1 h2{
+        margin-top: 4200px;
+    }
+    .amrow1 p,.amrow2 p,.amrow3 p{
+        margin:  2px auto;
+    }
+  
+   
+    
+    
+}
+
+@media screen and (max-width:484px) {
+    .dining{
+     margin-top: 1200px;
+    }
+    .amrow1,.amrow2,.amrow3 {
+        margin: 12px;
+    }
+}
